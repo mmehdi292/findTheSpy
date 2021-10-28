@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="core.js"></script>
+    <title>Find The Spy - The Game</title>
+</head>
+<body>
+    
+    <div class="menu" id="NewGame">
+        <h1>Welcome to the game : Find The Spy</h1>
+        <h1>Players numbers</h1>
+        <input type="number" class="number" id="players" value="4" min="3" max="10"/>
+        <h1>Players Spys</h1>
+        <input type="number" class="number" id="spys" value="1" min="1" max="5"/>
+        <h1>Time in minutes</h1>
+        <input type="number" class="number" id="time" value="10" min="5"/>
+        <button onclick="startGame()" class="btn">Start Game</button>
+    </div>
+    <div class="game" id="Game" onclick="">
+        <p id="p" class="playerclass">Player number <span id="playernumber"></span></p>
+        <div class="card">
+            <img src="qustion.svg" id="image" class="flag" width="48" height="48"/>
+            <p id="role">Click me</p>
+        </div>
+        <button id="inti" onclick="initGame()" class="btn">New Game</button>
+    </div>
+    <div>
+        <p class="copy">Developed by <a href="http://mmehdi292.pythonanywhere.com/">Mehdi CHAIB RASSOU</a></p>
+    </div>
+    <audio src="endgame.mp3">
+        <p>If you are reading this, it is because your browser does not support the audio element.</p>
+    </audio>
+    
+</body>
+</html>

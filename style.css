@@ -1,0 +1,85 @@
+:root {
+    --color1: #f5eec2;
+    --color2: #416a59;
+    --color3: #39395f;
+    --color4: #ffffff;
+  }
+body{
+    background-color: var(--color2);
+    min-height: 100vh; /* height of the browser viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu{
+    padding: 5px;
+    margin: 10px;
+    width: 200px;
+    height: auto;
+    border-radius:5px ;
+}
+.menu h1{
+    color: var(--color1);
+    font-size: 18px;
+    text-align: center;
+}
+.number{
+    width: 190px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 5px;
+    border:2px solid var(--color1);
+    text-align: center;
+    background-color: transparent;
+    color: var(--color1);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn{
+    width: 100%;
+    height: 40px;
+    background-color: var(--color1);
+    font-size: 18px;
+    color: var(--color3);
+    margin-top: 10px;
+    border: none;
+    border-radius:5px ;
+}
+.btn:hover{
+    -webkit-box-shadow: 3px 3px 14px 5px rgba(0,0,0,0.6); 
+    box-shadow: 3px 3px 14px 5px rgba(0,0,0,0.6);
+}
+.card{
+    background-color: var(--color1);
+    width: 200px;
+    height: 200px;
+    border-radius:5px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+p{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color3);
+}
+.playerclass{
+    color: var(--color1);
+}
+.game{
+    display: none;
+}
+.copy{
+    font-size: 14px;
+    color: var(--color1);
+}
+.copy a{
+    text-decoration: none;
+    color: var(--color1);
+}
+.copy a:hover{
+    color: var(--color3);
+}
