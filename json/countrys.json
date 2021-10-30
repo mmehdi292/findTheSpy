@@ -129,10 +129,6 @@
         "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/HR.svg"
     },
     {
-        "name": "Hungary",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/HU.svg"
-    },
-    {
         "name": "Indonesia",
         "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ID.svg"
     },
@@ -211,10 +207,6 @@
     {
         "name": "Malaysia",
         "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MY.svg"
-    },
-    {
-        "name": "Mozambique",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MZ.svg"
     },
     {
         "name": "Niger",
@@ -319,10 +311,6 @@
     {
         "name": "Turkey",
         "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TR.svg"
-    },
-    {
-        "name": "Tanzania",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TZ.svg"
     },
     {
         "name": "Ukraine",

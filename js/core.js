@@ -5,7 +5,7 @@ let audio;
 
 
 async function startGame(){
-    audio = new Audio('endgame.mp3');
+    audio = new Audio('../sound/endgame.mp3');
     document.getElementById("inti").style.display = "none";
     document.getElementById("NewGame").style.display = "none";
     var players = document.getElementById("players").value;
@@ -28,7 +28,7 @@ async function startGame(){
         if(spyArray.includes(i)){
             rolesArray[i]={
                 "name": "Your are spy",
-                "image": "spy.svg"
+                "image": "../svg/spy.svg"
             }
         }
         else{
@@ -41,7 +41,7 @@ async function startGame(){
 }
 
 async function getCountrys() {
-    let url = 'countrys.json';
+    let url = '../json/countrys.json';
     try {
         let res = await fetch(url);
         return await res.json();
@@ -64,7 +64,7 @@ function showRole(){
 function HiddenRole(){
     document.getElementById("playernumber").innerHTML = playernumber;
     document.getElementById("role").innerHTML = "Click";
-    document.getElementById("image").src = 'qustion.svg';
+    document.getElementById("image").src = '../svg/qustion.svg';
     document.getElementById("Game").setAttribute("onclick","showRole();");
     document.getElementById("Game").style.display = "block";
 }
@@ -72,13 +72,13 @@ function HiddenRole(){
 function initStartTime(){
     document.getElementById("p").innerHTML = "";
     document.getElementById("role").innerHTML = "Click to start time";
-    document.getElementById("image").src = 'time.svg';
+    document.getElementById("image").src = '../svg/time.svg';
     document.getElementById("Game").setAttribute("onclick","startTime();");
     document.getElementById("Game").style.display = "block";
 }
 function startTime(){
+    document.getElementById("image").src = '../svg/time.svg';
     document.getElementById("role").innerHTML = dateDecorator();
-    document.getElementById("image").src = 'time.svg';
     document.getElementById("Game").setAttribute("onclick","");
     document.getElementById("inti").style.display = "block";
     setTimeout('updateTimer()', 1000);
